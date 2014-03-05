@@ -1,0 +1,36 @@
+// Steps to understanding 
+// Understand the problem
+//   What are we placing
+//   When do conflicts arise
+//   How can we visualize our search space
+//   How can we turn that solution into code
+
+// To understand the problem, finish the board methods.
+// Major diagonals are top left to bottom right 
+// Minor diagonals are 
+// Don't search OUT from a queen
+// make the board find the conflict
+
+// Analysis before start
+// Backbone board allows any number of queens to be added
+// Backbone board doesn't show conflicts
+
+// Interfaces for the conflicts:
+// There's a function that tests a specific line, given an index
+// And a function that tests the whole board
+// NOTE: We might invert this to test the 4 unique "lines"
+//       that arise when we first place a queen
+
+
+
+
+
+// Sugary delicious philosophical/technical bits:
+// Invert the conflict testing to focus on new queens
+// Create a new board interface
+//   Represent the board in a typed array
+//   Wire the new board to the visualizer
+//     Either rewrite the visualizer
+//     Or wire the new interface to the old interface <-- Winner
+// Use lazy.js to completely dodge bad search spaces
+// Avoid recomputing reflections and rotations

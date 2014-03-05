@@ -84,6 +84,7 @@
 
     // test if any rows on this board contain conflicts
     hasAnyRowConflicts: function() {
+      //TODO REFACTOR TO USE LAZY.JS
       return false; // fixme
     },
 
@@ -99,6 +100,7 @@
 
     // test if any columns on this board contain conflicts
     hasAnyColConflicts: function() {
+      //TODO REFACTOR TO USE LAZY.JS
       return false; // fixme
     },
 
@@ -114,6 +116,7 @@
 
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
+      //TODO REFACTOR TO USE LAZY.JS
       return false; // fixme
     },
 
@@ -129,6 +132,7 @@
 
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
+      //TODO REFACTOR TO USE LAZY.JS
       return false; // fixme
     }
 
@@ -138,7 +142,7 @@
   });
 
   var makeEmptyMatrix = function(n) {
-    return _(_.range(n)).map(function() {
+    return _(_.range(n)).map(function() { //LOL UNDERSCORE <3
       return _(_.range(n)).map(function() {
         return 0;
       });
